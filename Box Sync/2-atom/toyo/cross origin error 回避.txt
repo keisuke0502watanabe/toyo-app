@@ -1,0 +1,11 @@
+macの場合
+
+一度chromeを完全に終了させてから
+chromeでcross origin error 回避
+ターミナルで以下をコピペ+enter
+
+OKな方。
+open -a Google\ Chrome --args -allow-file-access-from-files
+
+↓はだめだったほう
+open /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir
